@@ -7,21 +7,14 @@
     <style>
         body {
             font-family: serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
+            margin: 20px;
         }
 
         .container {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+            display: inline-block;
             padding: 40px;
-            width: fit-content;
             border: 1px solid #d3d3d3;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
             background-color: #ffffff;
         }
 
@@ -30,7 +23,11 @@
             font-weight: bold;
             padding: 10px 20px;
             min-width: 500px;
-            width: fit-content;
+            margin-bottom: 20px;
+        }
+
+        .box:last-child {
+            margin-bottom: 0;
         }
 
         .top-box {
