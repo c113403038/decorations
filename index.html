@@ -1,35 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Border Exercise</title>
+    <title>Web Page</title>
     <style>
         body {
             font-family: serif;
             display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
             flex-direction: column;
             gap: 20px;
             padding: 40px;
-            background-color: #f0f0f0;
+            width: fit-content;
+            border: 1px solid #d3d3d3;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            background-color: #ffffff;
         }
 
         .box {
             font-size: 32px;
             font-weight: bold;
             padding: 10px 20px;
-            width: fit-content;
             min-width: 500px;
+            width: fit-content;
         }
+
         .top-box {
             background-color: #add8e6;
             border: 6px double #ff6347;
         }
+
         .middle-box {
             background-color: #ffff00;
             border: 3px solid #1e90ff;
             border-radius: 15px;
         }
+
         .bottom-box {
             background-color: #3cb371;
             border: 8px dotted #808080;
@@ -38,9 +52,11 @@
 </head>
 <body>
 
-    <div class="box top-box">Hello World</div>
-    <div class="box middle-box">Hello World</div>
-    <div class="box bottom-box">Hello World</div>
+    <div class="container">
+        <div class="box top-box">Hello World</div>
+        <div class="box middle-box">Hello World</div>
+        <div class="box bottom-box">Hello World</div>
+    </div>
 
 </body>
 </html>
