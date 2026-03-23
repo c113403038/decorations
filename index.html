@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border Exercise</title>
+    <style>
+        body {
+            font-family: serif;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 40px;
+            background-color: #f0f0f0;
+        }
+
+        .box {
+            font-size: 32px;
+            font-weight: bold;
+            padding: 10px 20px;
+            width: fit-content;
+            min-width: 500px;
+        }
+
+        /* Top Box: Double orange border with light blue background */
+        .top-box {
+            background-color: #add8e6;
+            border: 6px double #ff6347;
+        }
+
+        /* Middle Box: Solid blue border, rounded corners, yellow background */
+        .middle-box {
+            background-color: #ffff00;
+            border: 3px solid #1e90ff;
+            border-radius: 15px;
+        }
+
+        /* Bottom Box: Dotted grey border with green background */
+        .bottom-box {
+            background-color: #3cb371;
+            border: 8px dotted #808080;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box top-box">Hello World</div>
+    <div class="box middle-box">Hello World</div>
+    <div class="box bottom-box">Hello World</div>
+
+</body>
+</html>
